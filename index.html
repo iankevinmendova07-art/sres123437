@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Roque Elementary School | Official Portal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 1. Load the external script file -->
+    <script src="js/main.js"></script>
+    
+    <!-- 2. Wait for the page to load, then call your function -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            pagination(); // This is how you correctly call it!
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Gov Identity Banner -->
+    <div class="gov-indicator">
+        <span>DEPARTMENT OF EDUCATION</span>
+        <span>REGION VIII • CATBALOGAN CITY</span>
+    </div>
+    <!-- Minimal Header Element -->
+    <header>
+        <div class="brand">
+            <!-- Replace with path to school seal -->
+            <img src="img/sreslogo.png" alt="San Roque ES Seal Layout">
+            <div class="brand-text">
+                <h1>San Roque Elementary School</h1>
+                <p>Catbalogan City Division • School ID: 123437</p>
+            </div>
+        </div>
+        <nav id="navbar-container">
+           
+        </nav>
+    </header>
+
+    <!-- Bold Flat Hero Space -->
+    <section class="hero">
+        <div class="hero-intro">
+            <h2>Nurturing Values.<br>Inspiring Excellence.</h2>
+            <p>Providing a safe, inclusive, and learner-centered environment for every child in San Roque, Catbalogan City.</p>
+            <div class="cta-group">
+                <a href="https://tinyurl.com/sresenroll26" target="_blank" class="btn-flat btn-flat-gold">SY 2026-2027 Registration</a>
+                <a href="#" class="btn-flat btn-flat-outline">View School Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flat Highlight Bar -->
+    <section class="features">
+        <div class="feature-node">
+            <i class="fas fa-certificate"></i>
+            <div>
+                <h4>Quality Instruction</h4>
+                <p>Aligned strictly with K-12 basic curriculum guidelines.</p>
+            </div>
+        </div>
+        <div class="feature-node">
+            <i class="fas fa-users"></i>
+            <div>
+                <h4>Community Powered</h4>
+                <p>Backed by strong PTA & local stakeholder alignments.</p>
+            </div>
+        </div>
+        <div class="feature-node">
+            <i class="fas fa-shield-heart"></i>
+            <div>
+                <h4>Child Safe Space</h4>
+                <p>Fostering positive, gender-sensitive learning areas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Workspace Split -->
+    <div class="main-layout">
+        
+        <!-- Bulletins & Information (Left) -->
+        <main>
+    <span class="section-heading">Latest Bulletins</span> 
+    
+    <!-- Wrapper container for the pagination script to read -->
+    <div id="bulletin-container">
+        
+    </div>
+
+    <!-- Flat Styled Pagination Controls -->
+    <div class="flat-pagination" id="pagination-controls">
+        <!-- Buttons will be rendered dynamically by JavaScript -->
+    </div>
+</main>
+        <!-- Dynamic Action Lists (Right) -->
+        <aside>
+            <div class="sidebar-panel">
+                <span class="section-heading">Portals</span>
+                <ul class="link-list">
+                    <li><a href="#" target="_blank">Learner Information System (LIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" target="_blank">Learning Resource Management and Information System (LRMIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" target="_blank">DepEd Commons Access <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-panel">
+                <span class="section-heading">Transparency</span>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">In compliance with accountability laws, view our regular MOOE allocation allocations and operational expenditure reports.</p>
+                <ul class="link-list">
+                    <li><a href="#">Monthly Financial Reports <i class="fas fa-download"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Flat Dark Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>San Roque ES</h5>
+                <p style="font-size: 13px; line-height: 1.8;">San Roque, Catbalogan City,<br>Samar, Philippines</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Transparency Board</a></li>
+                    <li><a href="#">Citizen's Charter</a></li>
+                    <li><a href="#">Careers & Postings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>External Resources</h5>
+                <ul>
+                    <li><a href="https://www.deped.gov.ph" target="_blank">DepEd Central Portal</a></li>
+                    <li><a href="https://www.gov.ph" target="_blank">Gov.ph Main Portal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-strip">
+            &copy; 2026 San Roque Elementary School. DepEd Catbalogan City Division. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

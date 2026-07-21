@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Roque Elementary School | Official Portal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 1. Load the external script file -->
+    <script src="js/main.js"></script>
+    
+    <!-- 2. Wait for the page to load, then call your function -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            pagination(); // This is how you correctly call it!
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Gov Identity Banner -->
+    <div class="gov-indicator">
+        <span>DEPARTMENT OF EDUCATION</span>
+        <span>REGION VIII • CATBALOGAN CITY</span>
+    </div>
+    <!-- Minimal Header Element -->
+    <header>
+        <div class="brand">
+            <!-- Replace with path to school seal -->
+            <img src="img/sreslogo.png" alt="San Roque ES Seal Layout">
+            <div class="brand-text">
+                <h1>San Roque Elementary School</h1>
+                <p>Catbalogan City Division • School ID: 123437</p>
+            </div>
+        </div>
+        <nav id="navbar-container">
+           
+        </nav>
+    </header>
+
+    <!-- Bold Flat Hero Space -->
+    <section class="hero">
+        <div class="hero-intro">
+            <h2>OFFICE OF THE <br>SCHOOLS DIVISION SUPERINTENDENT</h2>
+            <p>The OSDS serves as the administrative, legal, and financial steering wheel of the division. Headed directly by the Schools Division Superintendent (SDS) and assisted by the Assistant Schools Division Superintendent (ASDS), it ensures that the division operates within legal boundaries, manages fiscal resources prudently, and aligns local actions with national policy.</p>
+        </div>
+    </section>
+
+    <!-- Flat Highlight Bar -->
+    <section class="features">
+                    <!-- 2. School Management Monitoring and Evaluation (SMME) -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sreslegal" target="_blank">Legal Unit</a></h3>
+                        <p>Handles administrative cases, legal advice, contracts, and legal inquiries for the division.</p>
+                    </div>
+                    <!-- 3. Planning and Research Section -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sresicto" target="_blank">Information and Communications Technology (ICT)</a></h3>
+                        <p>Manages division-wide ICT infrastructure, DepEd computerization programs, enterprise systems (LIS, EBEIS), and technical support.</p>
+                    </div>
+                    <!-- 9. Youth Formation Section -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sresacctg" target="_blank">Accounting Section</a></h3>
+                        <p>Handles financial records, liquidation, processing of disbursements, and financial reporting.</p>
+                    </div>
+                     <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sresbudget" target="_blank">Budget Section</a></h3>
+                        <p>Manages budget allocation, obligation requests, and fund utilization tracking.</p>
+                    </div>
+                    <!-- 4. Human Resource Development (HRD) Section -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sresgas" target="_blank">General Administrative Services</a></h3>
+                        <p>Oversees building maintenance, security, and transportation services</p>
+                    </div>
+                    <!-- 5. Social Mobilization and Networking (SocMob) -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sreshrmo" target="_blank">Personnel / Human Resource Section</a></h3>
+                        <p>Handles recruitment, appointments, promotions, service records, leaves, and payroll management.</p>
+                    </div>
+                    <!-- 6. School Health and Nutrition Section -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sresrecords" target="_blank">Records Section</a></h3>
+                        <p>Manages incoming/outgoing communications, archives, and official document releases.</p>
+                    </div>
+                    <!-- 7. Education Facilities Section -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/sressupply" target="_blank">Supply and Property Section</a></h3>
+                        <p>Oversees procurement inventory, asset management, and distribution of school supplies/equipment.</p>
+                    </div>
+                    <!-- 8. Disaster Risk Reduction and Management (DRRM) -->
+                    <div class="office-box">
+                        <h3><a href="https://tinyurl.com/srescash" target="_blank">Cash Section</a></h3>
+                        <p>Manages collections, disbursements, and check preparations..</p>
+                    </div>
+                    
+    </section>
+
+    <!-- Content Workspace Split -->
+    <div class="main-layout">
+        
+        <!-- Bulletins & Information (Left) -->
+        <main>
+    <span class="section-heading">Latest Bulletins</span> 
+    
+    <!-- Wrapper container for the pagination script to read -->
+    <div id="bulletin-container">
+        
+    </div>
+
+    <!-- Flat Styled Pagination Controls -->
+    <div class="flat-pagination" id="pagination-controls">
+        <!-- Buttons will be rendered dynamically by JavaScript -->
+    </div>
+</main>
+        <!-- Dynamic Action Lists (Right) -->
+        <aside>
+            <div class="sidebar-panel">
+                <span class="section-heading">Portals</span>
+                <ul class="link-list">
+                    <li><a href="#" target="_blank">Learner Information System (LIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" target="_blank">Learning Resource Management and Information System (LRMIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="#" target="_blank">DepEd Commons Access <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-panel">
+                <span class="section-heading">Transparency</span>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">In compliance with accountability laws, view our regular MOOE allocation allocations and operational expenditure reports.</p>
+                <ul class="link-list">
+                    <li><a href="#">Monthly Financial Reports <i class="fas fa-download"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Flat Dark Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>San Roque ES</h5>
+                <p style="font-size: 13px; line-height: 1.8;">San Roque, Catbalogan City,<br>Samar, Philippines</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Transparency Board</a></li>
+                    <li><a href="#">Citizen's Charter</a></li>
+                    <li><a href="#">Careers & Postings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>External Resources</h5>
+                <ul>
+                    <li><a href="https://www.deped.gov.ph" target="_blank">DepEd Central Portal</a></li>
+                    <li><a href="https://www.gov.ph" target="_blank">Gov.ph Main Portal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-strip">
+            &copy; 2026 San Roque Elementary School. DepEd Catbalogan City Division. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+ :root {
+            --blue-primary: #0A3966;
+            --blue-light: #16538E;
+            --gold: #EBB02D;
+            --gray-flat: #F4F6F8;
+            --text-main: #2C3E50;
+            --text-muted: #7F8C8D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Top Minimal Gov Bar */
+        .gov-indicator {
+            background-color: #1A1A1A;
+            color: #E0E0E0;
+            font-size: 11px;
+            padding: 8px 8vw;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Flat Clean Header */
+        header {
+            padding: 20px 8vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #FFFFFF;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .brand img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .brand-text h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--blue-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .brand-text p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Flat Top Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--blue-light);
+        }
+
+        /* Bold Flat Hero Section */
+        .hero {
+            background-color: var(--blue-primary);
+            color: #FFFFFF;
+            padding: 80px 8vw;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #D6E4F0;
+            margin-bottom: 32px;
+            font-weight: 400;
+            max-width: 540px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn-flat {
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-flat-gold {
+            background-color: var(--gold);
+            color: #222222;
+        }
+
+        .btn-flat-gold:hover {
+            background-color: #DC9F1B;
+        }
+
+        .btn-flat-outline {
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            padding: 12px 26px;
+        }
+
+        .btn-flat-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Three-Column Flat Feature Bar */
+        .features {
+            background-color: var(--gray-flat);
+            padding: 40px 8vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-node {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .feature-node i {
+            font-size: 24px;
+            color: var(--blue-light);
+            background: #FFFFFF;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        .feature-node h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .feature-node p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Content Sections */
+        .main-layout {
+            padding: 60px 8vw;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+
+        .section-heading {
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--blue-primary);
+            margin-bottom: 24px;
+            border-bottom: 3px solid var(--gold);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Minimal Bulletin List */
+        .news-strip {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #EAECEF;
+        }
+
+        .news-strip:last-child {
+            border-bottom: none;
+        }
+
+        .news-meta {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .news-strip h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .news-strip p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Sidebar Elements */
+        .sidebar-panel {
+            margin-bottom: 40px;
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-list li {
+            margin-bottom: 12px;
+        }
+
+        .link-list li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px;
+            background-color: var(--gray-flat);
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .link-list li a:hover {
+            background-color: #E2E7EC;
+            color: var(--blue-primary);
+        }
+
+        /* Perfectly Flat Footer */
+        footer {
+            background-color: #1A252F;
+            color: #95A5A6;
+            padding: 60px 8vw 30px;
+            font-size: 14px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h5 {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #95A5A6;
+            text-decoration: none;
+        }
+
+        .footer-col ul li a:hover {
+            color: #FFFFFF;
+        }
+
+        .bottom-strip {
+            border-top: 1px solid #2C3E50;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* Responsiveness adjustments */
+        @media (max-width: 992px) {
+            header, .hero, .main-layout {
+                grid-template-columns: 1fr;
+                padding: 40px 5vw;
+            }
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            .brand {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+            .cta-group {
+                flex-direction: column;
+            }
+            .btn-flat {
+                text-align: center;
+            }
+        }
+/* pagination */
+        .flat-pagination {
+                display: flex;
+                gap: 8px;
+                margin-top: 30px;
+                padding-top: 15px;
+                border-top: 1px solid #EAECEF;
+            }
+
+            .page-btn {
+                background-color: var(--gray-flat);
+                color: var(--text-main);
+                border: none;
+                padding: 8px 16px;
+                font-weight: 600;
+                font-size: 13px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .page-btn:hover {
+                background-color: #E2E7EC;
+            }
+
+            .page-btn.active {
+                background-color: var(--blue-primary);
+                color: #FFFFFF;
+            }
+/* BOX CONTENT */
+            .features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .office-box {
+                background-color: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+
+            .office-box h3 {
+                margin-top: 0;
+                color: #1e3a8a; /* Deep blue often used in school systems */
+            }
+
+/* BOX LINK */
+            .office-box h3 {
+                color: #1a365d; /* Replace with your desired header color */
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            /* Ensure links inside h3 look EXACTLY like regular header text */
+            .office-box h3 a,
+            .office-box h3 a:visited,
+            .office-box h3 a:hover,
+            .office-box h3 a:active {
+                color: inherit;          /* Inherits the exact color from .office-box h3 */
+                text-decoration: none;   /* Removes the link underline */
+                font-weight: inherit;    /* Inherits font weight */
+            }
