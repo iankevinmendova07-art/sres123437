@@ -85,14 +85,15 @@
         }
 
         /* Bold Flat Hero Section */
-        .hero {
+         .hero {
             background-color: var(--blue-primary);
             color: #FFFFFF;
-            padding: 80px 8vw;
-            display: grid;
+            padding: 2rem;
+            display: flex;
             grid-template-columns: 1.2fr 0.8fr;
             align-items: center;
-            gap: 40px;
+            gap: 2rem;
+            justify-content: space-between;
         }
 
         .hero h2 {
@@ -101,6 +102,23 @@
             line-height: 1.15;
             margin-bottom: 16px;
             letter-spacing: -1px;
+        }
+        .hero-img {
+            max-width: 150px;      /* Adjust size as needed */
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 12px;   /* Adds breathing room above the text */
+        }
+        .hero-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Centers elements horizontally */
+        text-align: center;    /* Centers text inside headings */
+        }
+
+        .hero-image-container h3 {
+        margin: 4px 0;
         }
 
         .hero p {
@@ -399,3 +417,20 @@
                 text-decoration: none;   /* Removes the link underline */
                 font-weight: inherit;    /* Inherits font weight */
             }
+/* Slide Down + Fade In Animation Definition */
+  @keyframes slideDownFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Starts 50px above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Ends at original position */
+    }
+  }
+
+  /* Animation Trigger Class */
+  .animated-slide-down {
+    animation: slideDownFadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+</style>

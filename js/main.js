@@ -57,10 +57,10 @@ function loadNavbar() {
      
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="osds.html">Administrative Concern</a></li>
-                <li><a href="#">Curriculum Implementation</a></li>
+                <li><a href="cid.html">Curriculum Implementation</a></li>
                 <li><a href="sgod.html">School Governance</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         
     `;
@@ -82,34 +82,24 @@ document.addEventListener("DOMContentLoaded", loadNavbar);
 // 1. Store your announcement data cleanly in an array
 const announcementsData = [
     {
-        meta: "Announcements • July 20, 2026",
-        title: "Official Schedule for Oplan Brigada Eskwela",
-        desc: "Our collaborative cleaning, physical repairs, and maintenance program begins next week. Learn how community volunteers can donate equipment or sign up for specific maintenance schedules."
+        meta: "Announcement • August 4, 2026",
+        title: "School Base Feeding Program Launching", // <-- Added missing double quote
+        desc: "School Base Feeding Program will begin on August 3, 2026"
     },
     {
-        meta: "Academic Updates • July 12, 2026",
-        title: "Pre-Registration and Kindergarten Screening Protocols",
-        desc: "Parents of incoming kindergarten learners are requested to review the documentation checklist including PSA birth records and immunization cards before visiting the site."
+        meta: "Event • July 17, 2026",
+        title: "Conduct of School Governance Council",
+        desc: "The School Governance Council (SGC) in the Department of Education (DepEd) is a structure designed to empower local stakeholders and foster shared responsibility in school management."
     },
     {
-        meta: "Announcements • July 05, 2026",
-        title: "Distribution of Learning Materials and Modules",
-        desc: "Schedule for picking up student packets and physical workbooks will be distributed by classroom advisers through your respective group chats next Monday."
+        meta: "Announcement • June 3, 2026",
+        title: "Conduct of SPTA Meeting",
+        desc: "Join us at the school gymnasium for our annual planning assembly regarding the security improvements of school facilities."
     },
     {
-        meta: "Events • June 28, 2026",
-        title: "General PTA Assembly Meeting",
-        desc: "Join us on Zoom or physically at the school gymnasium for our annual planning assembly regarding the security improvements of school facilities."
-    },
-    {
-        meta: "Nutrition • June 20, 2026",
-        title: "Launch of School-Based Feeding Program (SBFP)",
-        desc: "In cooperation with local health units, the daily supplemental dietary plan kicks off for identified grade-school program beneficiaries."
-    },
-    {
-        meta: "Achievements • June 15, 2026",
-        title: "San Roque ES Wins Regional Press Conference Award",
-        desc: "Congratulations to our student journalists and trainers for bringing home the top spots in editorial writing and copyreading competitions!"
+        meta: "Announcements • June 12, 2026",
+        title: "Orientation of Trimester System",
+        desc: "Transitioning public schools from the traditional four-quarter system to a trimester structure."
     }
 ];
 
