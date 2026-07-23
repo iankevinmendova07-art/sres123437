@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Roque Elementary School | Official Portal</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css">    
     <!-- 1. Load the external script file -->
+    <!-- Load the external script file -->
     <script src="js/main.js"></script>
-    
-    <!-- 2. Wait for the page to load, then call your function -->
+    <script src="js/bulleting.js"></script>
+    <!-- Call both functions after the DOM loads -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            pagination(); // This is how you correctly call it!
+            loadNavbar(); // <--- ADD THIS LINE
+            pagination(); 
         });
     </script>
 </head>
@@ -34,18 +35,41 @@
                 <p>Catbalogan City Division • School ID: 123437</p>
             </div>
         </div>
-        <nav id="navbar-container">
-           
+        <nav id="navbar-container">           
         </nav>
     </header>
-
     <!-- Bold Flat Hero Space -->
     <section class="hero">
+        <!-- Image Slider Track -->
+       <div class="hero-slider">
+            <div class="slide">
+                <img src="img/hero1.jpeg" alt="School Activity 1">
+                <span class="slide-caption">School Governance Council Election</span>
+            </div>
+            <div class="slide">
+                <img src="img/hero2.jpeg" alt="School Activity 2">
+                <span class="slide-caption">OPCR VALIDATION</span>
+            </div>
+            <div class="slide">
+                <img src="img/hero3.jpg" alt="School Activity 3">
+                <span class="slide-caption">Serving Every one in Devotion to Christ (SEED) Partnerships</span>
+            </div>
+            <div class="slide">
+                <img src="img/hero4.jpg" alt="School Activity 4">
+                <span class="slide-caption">School Personnel Meeting</span>
+            </div>
+            <!-- Duplicate slide with matching caption for seamless loop -->
+            <div class="slide">
+                <img src="img/hero1.jpeg" alt="School Activity 1">
+                <span class="slide-caption">School Governance Council Election</span>
+            </div>
+        </div>
+        <!-- Dark Overlay to ensure readability of white text -->
+        <div class="hero-overlay"></div>
         <div class="hero-intro">
             <h2>OFFICE OF THE <br>SCHOOLS DIVISION SUPERINTENDENT</h2>
         </div>
     </section>
-
     <!-- Flat Highlight Bar -->
     <section class="features">
                     <!-- 2. School Management Monitoring and Evaluation (SMME) -->
@@ -111,29 +135,24 @@
     <div class="flat-pagination" id="pagination-controls">
         <!-- Buttons will be rendered dynamically by JavaScript -->
     </div>
-</main>
-        <!-- Dynamic Action Lists (Right) -->
+</main>        <!-- Dynamic Action Lists (Right) -->
         <aside>
             <div class="sidebar-panel">
                 <span class="section-heading">Portals</span>
                 <ul class="link-list">
-                    <li><a href="#" target="_blank">Learner Information System (LIS) <i class="fas fa-arrow-right"></i></a></li>
-                    <li><a href="#" target="_blank">Learning Resource Management and Information System (LRMIS) <i class="fas fa-arrow-right"></i></a></li>
-                    <li><a href="#" target="_blank">DepEd Commons Access <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="https://lis.deped.gov.ph/uis/login" target="_blank">Learner Information System (LIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="https://lrmis.deped.gov.ph/login" target="_blank">Learning Resource Management and Information System (LRMIS) <i class="fas fa-arrow-right"></i></a></li>
                 </ul>
             </div>
-
             <div class="sidebar-panel">
                 <span class="section-heading">Transparency</span>
                 <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">In compliance with accountability laws, view our regular MOOE allocation allocations and operational expenditure reports.</p>
                 <ul class="link-list">
-                    <li><a href="#">Monthly Financial Reports <i class="fas fa-download"></i></a></li>
+                    <li><a href="acctg.html">Monthly Financial Reports <i class="fas fa-download"></i></a></li>
                 </ul>
             </div>
         </aside>
-
     </div>
-
     <!-- Flat Dark Footer -->
     <footer>
         <div class="footer-grid">
