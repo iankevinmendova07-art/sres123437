@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // Define the pagination function
 function pagination() {
     const itemsPerPage = 3;
@@ -219,7 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('reveal-active'));
     }
 });
-=======
 // Define the pagination function
 function pagination() {
     const itemsPerPage = 3;
@@ -443,24 +442,24 @@ document.addEventListener('DOMContentLoaded', () => {
 // Array holding your slide details
 const heroSlides = [
     {
-        image: "img/hero1.jpeg",
+        image: "../img/hero1.jpeg",
         alt: "School Activity 1",
-        caption: "School Governance Council Election"
+        caption: "School Governance Council Election test"
     },
     {
-        image: "img/hero2.jpeg",
+        image: "../img/hero2.jpeg",
         alt: "School Activity 2",
-        caption: "OPCRF 2025 VALIDATION"
+        caption: "OPCRF 2025 VALIDATION test"
     },
     {
-        image: "img/hero3.jpg",
+        image: "../img/hero3.jpg",
         alt: "School Activity 3",
-        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships"
+        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships test"
     },
     {
         image: "img/hero4.jpg",
         alt: "School Activity 4",
-        caption: "School Personnel Meeting"
+        caption: "School Personnel Meeting test"
     }
 ];
 
