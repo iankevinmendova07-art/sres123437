@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/style.css">    
     <!-- 1. Load the external script file -->
     <!-- Load the external script file -->
+    <!-- 1. Load Chart.js and DataLabels FIRST -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- 2. Load your main script LAST -->
     <script src="js/main.js"></script>
     <script src="js/bulleting.js"></script>
-    <!-- Call both functions after the DOM loads -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             loadNavbar(); // <--- ADD THIS LINE

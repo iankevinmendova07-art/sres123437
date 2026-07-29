@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/style.css">    
     <!-- 1. Load the external script file -->
     <!-- Load the external script file -->
-   <!-- Chart.js & ChartDataLabels CDN Links -->
+    <!-- 1. Load Chart.js and DataLabels FIRST -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <!-- Your existing custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- 2. Load your main script LAST -->
     <script src="js/main.js"></script>
     <script src="js/bulleting.js"></script>
-        <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             loadNavbar(); // <--- ADD THIS LINE
             pagination(); 
@@ -167,10 +167,7 @@
         </div>
     </footer>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
+</html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Roque Elementary School | Official Portal</title>
@@ -340,5 +337,4 @@
         </div>
     </footer>
 </body>
->>>>>>> e766910606883fac9c82600f9e276d28110f5660
 </html>

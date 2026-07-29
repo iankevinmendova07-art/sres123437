@@ -75,22 +75,22 @@ const heroSlides = [
     {
         image: "img/hero1.jpg",
         alt: "School Activity 1",
-        caption: "School Governance Council Election test"
+        caption: "School Governance Council Election"
     },
     {
         image: "img/hero2.jpg",
         alt: "School Activity 2",
-        caption: "OPCRF 2025 VALIDATION test"
+        caption: "OPCRF 2025 VALIDATION"
     },
     {
         image: "img/hero3.jpg",
         alt: "School Activity 3",
-        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships test"
+        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships"
     },
     {
         image: "img/hero4.jpg",
         alt: "School Activity 4",
-        caption: "School Personnel Meeting test"
+        caption: "School Personnel Meeting"
     }
 ];
 
@@ -205,7 +205,7 @@ function createExpenseChart(canvasId, titleMonth, customData) {
 document.addEventListener('DOMContentLoaded', () => {
     // Isolated executions so an error in one feature doesn't stop the others
     try { loadNavbar(); } catch (e) { console.error('Navbar error:', e); }
-    try { pagination(); } catch (e) { console.error('Pagination error:', e); }
+    try { initBulletin(); } catch (e) { console.error('Bulletin error:', e); }
     try { renderHeroSlider(); } catch (e) { console.error('Hero Slider error:', e); }
 
     const monthlyData = {

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-:root {
+﻿:root {
     --blue-primary: #0A3966;
     --blue-light: #16538E;
     --gold: #EBB02D;
@@ -246,15 +245,6 @@ nav ul li a.active {
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.2s ease;
-}
-
-.btn-flat-gold {
-    background-color: var(--gold);
-    color: #222222;
-}
-
-.btn-flat-gold:hover {
-    background-color: #DC9F1B;
 }
 
 .btn-flat-outline {
@@ -615,30 +605,6 @@ footer {
 .chart-card:nth-child(9)  { transition-delay: 0.8s; }
 .chart-card:nth-child(10) { transition-delay: 0.9s; }
 .chart-card:nth-child(11) { transition-delay: 1.0s; }
-=======
-:root {
-    --blue-primary: #0A3966;
-    --blue-light: #16538E;
-    --gold: #EBB02D;
-    --gray-flat: #F4F6F8;
-    --text-main: #2C3E50;
-    --text-muted: #7F8C8D;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-body {
-    background-color: #FFFFFF;
-    color: var(--text-main);
-    line-height: 1.6;
-}
-
-/* Top Minimal Gov Bar */
 .gov-indicator {
     background-color: #1A1A1A;
     color: #E0E0E0;
@@ -865,13 +831,19 @@ nav ul li a.active {
     transition: background-color 0.2s ease;
 }
 
-.btn-flat-gold {
-    background-color: var(--gold);
-    color: #222222;
-}
-
-.btn-flat-gold:hover {
-    background-color: #DC9F1B;
+.btn-flat-gold, .btn-flat-gold:hover, .btn-flat-gold:focus, .btn-flat-gold:active {
+    background-color: var(--gold) !important;
+    color: #222222 !important;
+    box-shadow: none !important;
+    transition: none !important;
+    display: inline-block;
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 260px;
+    border-radius: 0;
+    text-decoration: none;
 }
 
 .btn-flat-outline {
@@ -1232,5 +1204,4 @@ footer {
 .chart-card:nth-child(9)  { transition-delay: 0.8s; }
 .chart-card:nth-child(10) { transition-delay: 0.9s; }
 .chart-card:nth-child(11) { transition-delay: 1.0s; }
->>>>>>> e766910606883fac9c82600f9e276d28110f5660
 .chart-card:nth-child(12) { transition-delay: 1.1s; }
