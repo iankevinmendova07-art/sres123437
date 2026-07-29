@@ -73,12 +73,12 @@ function pagination() {
 // ==========================================
 const heroSlides = [
     {
-        image: "img/hero1.jpeg",
+        image: "img/hero1.jpg",
         alt: "School Activity 1",
         caption: "School Governance Council Election test"
     },
     {
-        image: "img/hero2.jpeg",
+        image: "img/hero2.jpg",
         alt: "School Activity 2",
         caption: "OPCRF 2025 VALIDATION test"
     },
