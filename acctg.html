@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Roque Elementary School | Official Portal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- 1. Load the external script file -->
+    <!-- Load the external script file -->
+   <!-- Chart.js & ChartDataLabels CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <!-- Your existing custom scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/bulleting.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadNavbar(); // <--- ADD THIS LINE
+            pagination(); 
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Gov Identity Banner -->
+    <div class="gov-indicator">
+        <span>DEPARTMENT OF EDUCATION</span>
+        <span>REGION VIII • CATBALOGAN CITY</span>
+    </div>
+
+    <!-- Header Section (Removed scroll-reveal) -->
+    <header>
+        <div class="brand">
+            <img src="img/sreslogo.png" alt="San Roque ES Seal Layout">
+            <div class="brand-text">
+                <h1>San Roque Elementary School</h1>
+                <p>Catbalogan City Division • School ID: 123437</p>
+            </div>
+        </div>
+        <nav id="navbar-container">          
+        </nav>
+    </header>
+
+    <!-- Hero Section (Removed scroll-reveal) -->
+    <section class="hero">
+        <!-- Image Slider Track -->
+        <div class="hero-slider">
+            <div class="slide"><img src="img/hero1.jpeg" alt="School Activity 1"></div>
+            <div class="slide"><img src="img/hero2.jpeg" alt="School Activity 2"></div>
+            <div class="slide"><img src="img/hero3.jpg" alt="School Activity 3"></div>
+            <div class="slide"><img src="img/hero4.jpg" alt="School Activity 4"></div>
+            <!-- Duplicate of 1st image for seamless infinite slide loop -->
+            <div class="slide"><img src="img/hero1.jpeg" alt="School Activity 1"></div>
+        </div>
+
+        <!-- Dark Overlay to ensure readability of white text -->
+        <div class="hero-overlay"></div>
+        <div class="hero-intro">
+            <h2>SCHOOL MAINTENANCE AND <br>OTHER OPERATING EXPENSES <br> (MOOE) </h2>             
+        </div>
+    </section>
+
+    <!-- Features / Charts Section (scroll-reveal remains ONLY on chart-cards) -->
+    <section class="features">
+        <div class="chart-card scroll-reveal">
+            <h2> January 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartJanuary"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>February 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartFebruary"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>March 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartMarch"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>April 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartApril"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>May 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartMay"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>June 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartJune"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>July 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartJuly"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>August 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartAugust"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>September 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartSeptember"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>October 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartOctober"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>November 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartNovember"></canvas></div>
+        </div>
+        <div class="chart-card scroll-reveal">
+            <h2>December 2026</h2>
+            <div class="chart-container"><canvas id="expenseChartDecember"></canvas></div>
+        </div>
+    </section>  
+
+    <!-- Main Content Layout (Removed scroll-reveal from main & aside) -->
+    <div class="main-layout">        
+        <!-- Bulletins & Information (Left) -->
+        <main>
+            <span class="section-heading">Latest Bulletins</span> 
+            <div id="bulletin-container">        
+            </div>
+            <div class="flat-pagination" id="pagination-controls">
+            </div>
+        </main>
+        <!-- Dynamic Action Lists (Right) -->
+        <aside>
+            <div class="sidebar-panel">
+                <span class="section-heading">Portals</span>
+                <ul class="link-list">
+                    <li><a href="https://lis.deped.gov.ph/uis/login" target="_blank">Learner Information System (LIS) <i class="fas fa-arrow-right"></i></a></li>
+                    <li><a href="https://lrmis.deped.gov.ph/login" target="_blank">Learning Resource Management and Information System (LRMIS) <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-panel">
+                <span class="section-heading">Transparency</span>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">In compliance with accountability laws, view our regular MOOE allocation allocations and operational expenditure reports.</p>
+                <ul class="link-list">
+                    <li><a href="acctg.html">Monthly Financial Reports <i class="fas fa-download"></i></a></li>
+                </ul>
+            </div>
+        </aside>       
+    </div>
+
+    <!-- Footer Section (Removed scroll-reveal) -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>San Roque ES</h5>
+                <p style="font-size: 13px; line-height: 1.8;">San Roque, Catbalogan City,<br>Samar, Philippines</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Transparency Board</a></li>
+                    <li><a href="#">Citizen's Charter</a></li>
+                    <li><a href="#">Careers & Postings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>External Resources</h5>
+                <ul>
+                    <li><a href="https://www.deped.gov.ph" target="_blank">DepEd Central Portal</a></li>
+                    <li><a href="https://www.gov.ph" target="_blank">Gov.ph Main Portal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-strip">
+            &copy; 2026 San Roque Elementary School. DepEd Catbalogan City Division. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
