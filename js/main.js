@@ -73,22 +73,22 @@ function pagination() {
 // ==========================================
 const heroSlides = [
     {
-        image: "../img/hero1.jpeg",
+        image: "img/hero1.jpeg",
         alt: "School Activity 1",
         caption: "School Governance Council Election test"
     },
     {
-        image: "../img/hero2.jpeg",
+        image: "img/hero2.jpeg",
         alt: "School Activity 2",
         caption: "OPCRF 2025 VALIDATION test"
     },
     {
-        image: "../img/hero3.jpg",
+        image: "img/hero3.jpg",
         alt: "School Activity 3",
         caption: "Serving Every one in Devotion to Christ (SEED) Partnerships test"
     },
     {
-        image: "../img/hero4.jpg",
+        image: "img/hero4.jpg",
         alt: "School Activity 4",
         caption: "School Personnel Meeting test"
     }
