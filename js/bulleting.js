@@ -1,6 +1,11 @@
 const announcementsData = [
+      {
+        meta: "Announcement • July 28, 2026",
+        title: "ReMANCOM Hosted by Catbalogan City Division",
+        desc: "The Regional Management Committee (ReMANCOM) is a gathering of key education leaders and stakeholders from various regions to discuss and strategize on the implementation of educational policies, programs, and initiatives."
+    },
     {
-        meta: "Announcement • August 3, 2026",
+        meta: "Announcement • July 28, 2026",
         title: "School Base Feeding Program Launching",
         desc: "School Base Feeding Program will begin on August 3, 2026"
     },
