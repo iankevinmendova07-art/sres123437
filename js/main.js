@@ -123,17 +123,17 @@ const heroSlides = [
     {
         image: "img/hero2.jpg",
         alt: "School Activity 2",
-        caption: "OPCRF 2025 VALIDATION"
+        caption: "SGC ELECTION 2026"
     },
     {
         image: "img/hero3.jpg",
         alt: "School Activity 3",
-        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships"
+        caption: "OPCRF 2025 VALIDATION"
     },
     {
         image: "img/hero4.jpg",
         alt: "School Activity 4",
-        caption: "School Personnel Meeting"
+        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships"
     }
 ];
 
