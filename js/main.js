@@ -14,7 +14,7 @@ function loadNavbar() {
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" aria-expanded="false">Innovation</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Online School Based Feeding Program</a></li>
+                    <li><a href="#">Online Nutritional Status</a></li>
                     <li><a href="#">Supply Management System</a></li>
                 </ul>
             </li>
