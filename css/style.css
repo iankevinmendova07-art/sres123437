@@ -1205,3 +1205,53 @@ footer {
 .chart-card:nth-child(10) { transition-delay: 0.9s; }
 .chart-card:nth-child(11) { transition-delay: 1.0s; }
 .chart-card:nth-child(12) { transition-delay: 1.1s; }
+
+/* Dropdown submenu styles for Innovation */
+nav ul li {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: "▾";
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    background: #FFFFFF;
+    padding: 8px 0;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.dropdown.open .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li + li {
+    margin-top: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 4px 14px;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.dropdown-menu a:hover {
+    background: var(--gray-flat);
+    color: var(--blue-light);
+}

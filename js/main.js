@@ -11,9 +11,52 @@ function loadNavbar() {
             <li><a href="osds.html">Administrative Concern</a></li>
             <li><a href="cid.html">Curriculum Implementation</a></li>
             <li><a href="sgod.html">School Governance</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" aria-expanded="false">Innovation</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Online School Based Feeding Program</a></li>
+                    <li><a href="#">Supply Management System</a></li>
+                </ul>
+            </li>
             <li><a href="#">About</a></li>
         </ul>
     `;
+
+    const dropdowns = container.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        if (!toggle) return;
+
+        toggle.onclick = (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const shouldOpen = !dropdown.classList.contains('open');
+
+            dropdowns.forEach(item => {
+                item.classList.remove('open');
+                const itemToggle = item.querySelector('.dropdown-toggle');
+                if (itemToggle) itemToggle.setAttribute('aria-expanded', 'false');
+            });
+
+            if (shouldOpen) {
+                dropdown.classList.add('open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+        };
+    });
+
+    if (!document.body.dataset.navCloseBound) {
+        document.body.dataset.navCloseBound = 'true';
+        document.addEventListener('click', () => {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('open');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 }
 
 // ==========================================
