@@ -118,7 +118,7 @@ const heroSlides = [
     {
         image: "img/hero1.jpg",
         alt: "School Activity 1",
-        caption: "REGION VII RD AND ARD VISIT DISTRICT VIII"
+        caption: "REGION VIII RD AND ARD VISIT DISTRICT VIII"
     },
     {
         image: "img/hero2.jpg",
