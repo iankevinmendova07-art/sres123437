@@ -1,5 +1,20 @@
 const announcementsData = [
-      {
+    {
+        meta: "Announcement • September 11, 2026",
+        title: "Conduct of Inset 2026",
+        desc: "DepEd INSET 2026: A dedicated professional development program designed to enhance teaching strategies, foster digital innovation, and strengthen instructional practices to support learner success."
+    },
+     {
+        meta: "Announcement • August 25, 2026",
+        title: "Conduct of Attack Drill Exercise",
+        desc: "A practical safety drill aimed at training personnel and participants to react swiftly, follow lockdown and evacuation procedures, and maintain safety in an unexpected emergency."
+    },
+    {
+        meta: "Announcement • August 17, 2026",
+        title: "Start of Feeding Program on August 17, 2026",
+        desc: "The Feeding Program officially kicks off on August 17, 2026. This initiative aims to improve health and nutrition by providing fresh, balanced, and nourishing meals to participants, helping build a stronger, healthier communit."
+    },  
+    {
         meta: "Announcement • July 28, 2026",
         title: "ReMANCOM Hosted by Catbalogan City Division",
         desc: "The Regional Management Committee (ReMANCOM) is a gathering of key education leaders and stakeholders from various regions to discuss and strategize on the implementation of educational policies, programs, and initiatives."

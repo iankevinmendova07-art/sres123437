@@ -116,24 +116,24 @@ function pagination() {
 // ==========================================
 const heroSlides = [
     {
-        image: "img/hero1.jpg",
+        image: "img/inset.jpg",
         alt: "School Activity 1",
+        caption: "Conduct of INSET 2026"
+    },
+    {
+        image: "img/atackdrill.jpg",
+        alt: "School Activity 1",
+        caption: "Attack Drill Exercise"
+    },
+    {
+        image: "img/hero1.jpg",
+        alt: "School Activity 2",
         caption: "REGION VIII RD AND ARD VISIT DISTRICT VIII"
     },
     {
         image: "img/hero2.jpg",
-        alt: "School Activity 2",
-        caption: "SGC ELECTION 2026"
-    },
-    {
-        image: "img/hero3.jpg",
         alt: "School Activity 3",
-        caption: "OPCRF 2025 VALIDATION"
-    },
-    {
-        image: "img/hero4.jpg",
-        alt: "School Activity 4",
-        caption: "Serving Every one in Devotion to Christ (SEED) Partnerships"
+        caption: "SGC ELECTION 2026"
     }
 ];
 
@@ -257,9 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'March':     [0.0, 22389.19, 0.0, 4154.06, 0.0,  15890.30, 11500.0,  17152.0],
         'April':     [0.0, 11414.0, 0.0, 1795.71, 0.0, 17585.30,  11500.0,  19526.0],
         'May':       [0.0, 0.0, 0.0, 1189.53, 0.0, 12920.0, 11500.0,  30300.0],
-        'June':      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-        'July':      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-        'August':    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        'June':      [0.0, 46158.76, 3045.00, 0.0, 1998.0, 22417.70, 11500.0, 550.00],
+        'July':      [0.0, 16178, 0.0, 10024.83, 2997.00, 16633, 11500, 0.0],
+        'August':    [0.0, 33522, 4192.08, 0.0, 4989.90, 4989.90, 11500, 900.00],
         'September': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
         'October':   [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
         'November':  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
